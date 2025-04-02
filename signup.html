@@ -22,6 +22,11 @@
             padding: 10px;
             border-radius: 5px;
             border: none;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+        input::placeholder {
+            color: #ddd;
         }
         .btn {
             background: #7e22ce;
@@ -33,26 +38,35 @@
             display: inline-block;
             margin-top: 20px;
             cursor: pointer;
+            border: none;
         }
         .btn:hover {
             background: #5a1a9b;
         }
         .social-btns {
             margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
         }
         .social-btns a {
-            display: block;
-            width: 80%;
-            margin: 10px auto;
-            padding: 10px;
-            border-radius: 5px;
-            background: #fff;
-            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
             text-decoration: none;
-            font-size: 16px;
+            font-size: 24px;
         }
         .social-btns a:hover {
-            background: #ddd;
+            background: rgba(255, 255, 255, 0.2);
+        }
+        .social-btns img {
+            width: 24px;
+            height: 24px;
         }
     </style>
 </head>
@@ -66,11 +80,11 @@
             <button type="submit" class="btn">Sign Up</button>
         </form>
         <div class="social-btns">
-            <a href="#" class="google">Sign Up with Google</a>
-            <a href="#" class="facebook">Sign Up with Facebook</a>
-            <a href="#" class="twitter">Sign Up with Twitter</a>
+            <a href="#" class="google"><img src="google-logo.png" alt="Google"></a>
+            <a href="#" class="facebook"><img src="facebook-logo.png" alt="Facebook"></a>
+            <a href="#" class="twitter"><img src="twitter-logo.png" alt="Twitter"></a>
         </div>
         <p>Already have an account? <a href="login.html" style="color: #7e22ce;">Login here</a></p>
     </div>
 </body>
-    </html>
+</html>
